@@ -1,0 +1,107 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#home {
+  background: #ff5733;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+#about, #blog {
+  background: #fff;
+  color: #333;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.blog-posts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.post {
+  background: #ffcc00;
+  padding: 20px;
+  width: 45%;
+  margin: 20px 0;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .blog-posts {
+      flex-direction: column;
+  }
+
+  .post {
+      width: 90%;
+      margin: 10px auto;
+  }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#home .container {
+  animation: fadeIn 2s ease-in-out;
+}
+
+#about .container {
+  animation: fadeIn 2s ease-in-out;
+  animation-delay: 0.5s;
+}
+
+#blog .container {
+  animation: fadeIn 2s ease-in-out;
+  animation-delay: 1s;
+}
